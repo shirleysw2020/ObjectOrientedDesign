@@ -58,9 +58,12 @@ class ParkingSpot {
   - this.spotSize = spotSize
   - this.level = level
   - this.row = row
+  // - availability??
 
   getRow() //return row number
   getSpotNumber() //return spotNumber
   isAvailable() //return boolean whether spot is available
   canFitVehicle() //return boolean whether spot is big enough for vehicle
+  park(Vehicle v) //park vehicle in this spot
+  removeVehicle() //rmv vehicle from spot and notify Level new spot available
 }
